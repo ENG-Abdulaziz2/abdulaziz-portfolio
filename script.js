@@ -1,3 +1,10 @@
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+
+menuBtn.onclick = () => {
+    menu.classList.toggle("show");
+};
+
 const links = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll("section");
 
