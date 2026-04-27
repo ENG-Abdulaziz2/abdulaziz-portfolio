@@ -1,29 +1,71 @@
-const menuBtn = document.getElementById("menuBtn");
-const menu = document.getElementById("menu");
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
-menuBtn.onclick = () => {
-    menu.classList.toggle("show");
-};
+/* NAVBAR */
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 1000;
+}
 
-const links = document.querySelectorAll(".nav-link");
-const sections = document.querySelectorAll("section");
+/* القائمة */
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
 
-window.addEventListener("scroll", () => {
-    let current = "";
+/* الروابط */
+.nav a {
+  color: white;
+  text-decoration: none;
+}
 
-    sections.forEach(section => {
-        const top = section.offsetTop - 80;
-        const height = section.clientHeight;
+/* 🔥 زر المينيو (مخفي في اللابتوب) */
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
-        if (scrollY >= top && scrollY < top + height) {
-            current = section.id;
-        }
-    });
+/* السكشن */
+section {
+  height: 100vh;
+  padding-top: 80px;
+}
 
-    links.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === "#" + current) {
-            link.classList.add("active");
-        }
-    });
-});
+/* ===================== */
+/* 📱 الجوال */
+/* ===================== */
+@media (max-width: 768px) {
+
+  /* يظهر زر ☰ */
+  .menu-btn {
+    display: block;
+  }
+
+  /* يخفي القائمة */
+  .nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: black;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  /* عند الضغط */
+  .nav ul.show {
+    display: flex;
+  }
+}
