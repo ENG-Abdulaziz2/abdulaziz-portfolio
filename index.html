@@ -2,45 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  
-  <!-- 🔥 أهم سطر (يحل مشكلة الجوال) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Portfolio</title>
+  <title>Abdulaziz | Software Engineer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="nav">
-  <h2>Abdulaziz</h2>
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">ABDULAZIZ.DEV</div>
 
-  <!-- زر الجوال -->
-  <div class="menu-btn" id="menuBtn">☰</div>
-
-  <!-- القائمة -->
-  <ul id="menu">
-    <li><a href="#home" class="nav-link active">Home</a></li>
-    <li><a href="#about" class="nav-link">About</a></li>
-    <li><a href="#projects" class="nav-link">Projects</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
+
+  <div class="burger" id="burger">
+    <span class="line1"></span>
+    <span class="line2"></span>
+    <span class="line3"></span>
+  </div>
 </nav>
 
-<section id="home">
-  <h1>Home</h1>
+<!-- HERO -->
+<section id="home" class="hero">
+  <h1>Building <span>Digital</span> Solutions</h1>
+  <p>I am Abdulaziz, a Software Engineering student focused on building real-world systems.</p>
+
+  <div class="btn-group">
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="#contact" class="btn btn-outline">Contact Me</a>
+  </div>
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-  <h1>About</h1>
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-box">
+    <p>
+      Software Engineering student passionate about building modern systems and solving real-world problems.
+      Skilled in Python, JavaScript, and UI/UX design. I enjoy turning complex ideas into simple user experiences.
+    </p>
+  </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
-  <h1>Projects</h1>
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>STMS System</h3>
+      <p>Task management system using Agile methodology.</p>
+      <div class="tech-tags">
+        <span class="tag">Agile</span>
+        <span class="tag">Scrum</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Lost & Found App</h3>
+      <p>Campus platform to track lost items efficiently.</p>
+      <div class="tech-tags">
+        <span class="tag">Mobile</span>
+        <span class="tag">UML</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Amazon UX Study</h3>
+      <p>UI/UX redesign improving user experience.</p>
+      <div class="tech-tags">
+        <span class="tag">UI/UX</span>
+        <span class="tag">Figma</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-  <h1>Contact</h1>
+  <h2 class="section-title">Let's Work Together</h2>
+  <p class="contact-text">Have a project or idea? Feel free to reach out.</p>
+
+  <a href="mailto:azezalabdan@gmail.com" class="btn btn-primary">Send Email</a>
 </section>
 
 <script src="script.js"></script>
