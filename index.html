@@ -1,103 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdulaziz | Software Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulaziz | Software Engineer Portfolio</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <nav>
+        <div class="logo">Abdulaziz</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-<nav>
-  <div class="logo">ABDULAZIZ.DEV</div>
+    <section id="home" class="hero">
+        <h1>Building <span>Digital</span> Solutions</h1>
+        <p>Hi, I'm Abdulaziz Alabdan. A Software Engineering student at University of Hail focused on building
+            real-world technical projects and smart solutions.</p>
+        <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+    </section>
 
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+    <section id="about">
+        <h2 class="section-title">Who Am I?</h2>
+        <div class="about-container">
+            <p>
+                Software Engineering student at University of Hail, specializing in modern development. Interested in
+                UI/UX design and building systems using technologies like Python and JavaScript.
+            </p>
+        </div>
+    </section>
 
-  <div class="burger" id="burger">
-    <span class="line1"></span>
-    <span class="line2"></span>
-    <span class="line3"></span>
-  </div>
-</nav>
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>STMS System</h3>
+                <p>An integrated student task management system using Agile methodology and Scrum.</p>
+                <div class="tech-tags">
+                    <span class="tag">Agile</span>
+                    <span class="tag">Scrum</span>
+                </div>
+            </div>
 
+            <div class="project-card">
+                <h3>Lost & Found Tracker</h3>
+                <p>Platform to track and recover lost items inside the university campus.</p>
+                <div class="tech-tags">
+                    <span class="tag">Tracking</span>
+                </div>
+            </div>
 
-<section id="home" class="hero">
-  <h1>Building <span>Digital</span> Solutions</h1>
-  <p>I am Abdulaziz, a Software Engineering student focused on building real-world systems.</p>
+            <div class="project-card">
+                <h3>Amazon UX Case Study</h3>
+                <p>Detailed UI/UX redesign project focused on improving user journey experience.</p>
+                <div class="tech-tags">
+                    <span class="tag">UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="btn-group">
-    <a href="#projects" class="btn btn-primary">View Projects</a>
-    <a href="#contact" class="btn btn-outline">Contact Me</a>
-  </div>
-</section>
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> azezalabdan@gmail.com</p>
+            <p><strong>Phone:</strong> 0539156003</p>
+            <div class="social-links">
+                <a href="https://github.com/ENG-Abdulaziz2" target="_blank" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
 
-
-<section id="about">
-  <h2 class="section-title">About Me</h2>
-
-  <div class="about-box">
-    <p>
-      Software Engineering student passionate about building modern systems and solving real-world problems.
-      Skilled in Python, JavaScript, and UI/UX design. I enjoy turning complex ideas into simple user experiences.
-    </p>
-  </div>
-</section>
-
-
-<section id="projects">
-  <h2 class="section-title">Projects</h2>
-
-  <div class="projects-grid">
-
-    <div class="project-card">
-      <h3>STMS System</h3>
-      <p>Task management system using Agile methodology.</p>
-      <div class="tech-tags">
-        <span class="tag">Agile</span>
-        <span class="tag">Scrum</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>Lost & Found App</h3>
-      <p>Campus platform to track lost items efficiently.</p>
-      <div class="tech-tags">
-        <span class="tag">Mobile</span>
-        <span class="tag">UML</span>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <h3>Amazon UX Study</h3>
-      <p>UI/UX redesign improving user experience.</p>
-      <div class="tech-tags">
-        <span class="tag">UI/UX</span>
-        <span class="tag">Figma</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section id="contact">
-  <h2 class="section-title">Let's Work Together</h2>
-  <p class="contact-text">Have a project or idea? Feel free to reach out.</p>
-
-  <a href="mailto:azezalabdan@gmail.com" class="btn btn-primary">Send Email</a>
-</section>
-
-<script src="script.js"></script>
+    <
+    <script src="script.js"></script>
 </body>
+
 </html>
