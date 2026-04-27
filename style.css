@@ -13,10 +13,8 @@ body {
     top: 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 12px 20px;
     background: rgba(0, 0, 0, 0.95);
-    backdrop-filter: blur(10px);
     z-index: 1000;
 }
 
@@ -24,14 +22,11 @@ body {
     display: flex;
     gap: 20px;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .nav a {
     color: #aaa;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 .nav a:hover {
@@ -43,7 +38,7 @@ body {
     border-bottom: 2px solid orange;
 }
 
-/* 🔥 MENU BUTTON (مخفي في الديسكتوب) */
+/* MENU BUTTON */
 .menu-btn {
     display: none;
     font-size: 24px;
@@ -52,7 +47,9 @@ body {
 
 /* HERO */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    /* 🔥 حل مشكلة الجوال */
+    padding: 100px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +59,7 @@ body {
 
 .hero-content {
     max-width: 700px;
+    width: 100%;
 }
 
 .hero h1 {
@@ -99,7 +97,7 @@ body {
     color: orange;
 }
 
-/* SECTIONS */
+/* SECTION */
 .section {
     padding: 100px;
 }
@@ -110,12 +108,6 @@ body {
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
-    transition: 0.3s;
-}
-
-.project:hover {
-    transform: translateY(-5px);
-    border: 1px solid orange;
 }
 
 /* SKILLS */
@@ -127,21 +119,17 @@ body {
 
 /* CONTACT */
 .socials a {
-    margin-right: 10px;
     color: orange;
+    margin-right: 10px;
 }
 
-/* ========================= */
-/* 🔥 RESPONSIVE (الجوال) */
-/* ========================= */
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
-    /* يظهر زر المينيو فقط هنا */
     .menu-btn {
         display: block;
     }
 
-    /* يخفي القائمة */
     .nav ul {
         display: none;
         position: absolute;
@@ -151,29 +139,34 @@ body {
         flex-direction: column;
         padding: 15px;
         border-radius: 8px;
-        width: 160px;
     }
 
-    /* عند الضغط */
     .nav ul.show {
         display: flex;
     }
 
-    /* HERO */
     .hero {
-        height: auto;
-        padding: 100px 20px;
+        min-height: auto;
+        padding: 120px 20px 60px;
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
-    .hero-content {
-        max-width: 100%;
+    .hero p {
+        font-size: 14px;
     }
 
-    /* SECTION */
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
     .section {
         padding: 60px 20px;
     }
