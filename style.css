@@ -1,173 +1,71 @@
 body {
-    margin: 0;
-    font-family: Arial;
-    background: #0d0d0d;
-    color: white;
-    padding-top: 60px;
+  margin: 0;
+  font-family: Arial;
 }
 
 /* NAVBAR */
 .nav {
-    position: fixed;
-    width: 95%;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 20px;
-    background: rgba(0, 0, 0, 0.95);
-    z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 1000;
 }
 
+/* القائمة */
 .nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
+/* الروابط */
 .nav a {
-    color: #aaa;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-.nav a:hover {
-    color: orange;
-}
-
-.nav-link.active {
-    color: white;
-    border-bottom: 2px solid orange;
-}
-
-/* MENU BUTTON */
+/* 🔥 زر المينيو (مخفي في اللابتوب) */
 .menu-btn {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-/* HERO */
-.hero {
-    min-height: 100vh;
-    /* 🔥 حل مشكلة الجوال */
-    padding: 100px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: radial-gradient(circle, #111, #000);
+/* السكشن */
+section {
+  height: 100vh;
+  padding-top: 80px;
 }
 
-.hero-content {
-    max-width: 700px;
-    width: 100%;
-}
-
-.hero h1 {
-    font-size: 50px;
-}
-
-.hero h3 {
-    color: orange;
-}
-
-/* BUTTONS */
-.btn {
-    padding: 12px 20px;
-    border-radius: 25px;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.primary {
-    background: white;
-    color: black;
-}
-
-.primary:hover {
-    background: orange;
-}
-
-.secondary {
-    border: 1px solid #555;
-    color: white;
-}
-
-.secondary:hover {
-    border-color: orange;
-    color: orange;
-}
-
-/* SECTION */
-.section {
-    padding: 100px;
-}
-
-/* PROJECT */
-.project {
-    background: #1a1a1a;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-}
-
-/* SKILLS */
-.skills li {
-    background: #222;
-    margin: 5px 0;
-    padding: 8px;
-}
-
-/* CONTACT */
-.socials a {
-    color: orange;
-    margin-right: 10px;
-}
-
-/* RESPONSIVE */
+/* ===================== */
+/* 📱 الجوال */
+/* ===================== */
 @media (max-width: 768px) {
 
-    .menu-btn {
-        display: block;
-    }
+  /* يظهر زر ☰ */
+  .menu-btn {
+    display: block;
+  }
 
-    .nav ul {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background: #111;
-        flex-direction: column;
-        padding: 15px;
-        border-radius: 8px;
-    }
+  /* يخفي القائمة */
+  .nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: black;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+  }
 
-    .nav ul.show {
-        display: flex;
-    }
-
-    .hero {
-        min-height: auto;
-        padding: 120px 20px 60px;
-    }
-
-    .hero h1 {
-        font-size: 26px;
-    }
-
-    .hero p {
-        font-size: 14px;
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-    }
-
-    .section {
-        padding: 60px 20px;
-    }
+  /* عند الضغط */
+  .nav ul.show {
+    display: flex;
+  }
 }
